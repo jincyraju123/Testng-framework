@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-20T16:10:42 EDT" name="Smoke" finished-at="2024-09-20T16:10:53 EDT" duration-ms="11636">
+    <groups>
+    </groups>
+    <test started-at="2024-09-20T16:10:42 EDT" name="Login" finished-at="2024-09-20T16:10:53 EDT" duration-ms="11636">
+      <class name="com.salesforce.tests.Loginsalesforcetest">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:42 EDT" name="beforemethod" finished-at="2024-09-20T16:10:45 EDT" duration-ms="2799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="loginapplication()[pri:1, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:45 EDT" name="loginapplication" finished-at="2024-09-20T16:10:47 EDT" duration-ms="2748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginapplication -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:47 EDT" name="teardown" finished-at="2024-09-20T16:10:48 EDT" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:48 EDT" name="beforemethod" finished-at="2024-09-20T16:10:49 EDT" duration-ms="1435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="invalidusernameandpassword()[pri:2, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:49 EDT" name="invalidusernameandpassword" finished-at="2024-09-20T16:10:50 EDT" duration-ms="1109" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [check your username and password. If you still can't log in, contact your Salesforce administrator.] but found [Please check your username and password. If you still can't log in, contact your Salesforce administrator.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [check your username and password. If you still can't log in, contact your Salesforce administrator.] but found [Please check your username and password. If you still can't log in, contact your Salesforce administrator.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.qa.base.BasePage.comparetext(BasePage.java:52)
+at com.salesforce.pages.LoginPage.compareerrormessage(LoginPage.java:79)
+at com.salesforce.tests.Loginsalesforcetest.invalidusernameandpassword(Loginsalesforcetest.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidusernameandpassword -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:50 EDT" name="teardown" finished-at="2024-09-20T16:10:51 EDT" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:51 EDT" name="beforemethod" finished-at="2024-09-20T16:10:52 EDT" duration-ms="1608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="loginapplicationwithoutpassword()[pri:3, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:52 EDT" name="loginapplicationwithoutpassword" finished-at="2024-09-20T16:10:53 EDT" duration-ms="1146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginapplicationwithoutpassword -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:53 EDT" name="teardown" finished-at="2024-09-20T16:10:53 EDT" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.salesforce.tests.Loginsalesforcetest -->
+    </test> <!-- Login -->
+  </suite> <!-- Smoke -->
+</testng-results>

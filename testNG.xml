@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke" parallel="tests" thread-count="3">
+	
+	<parameter name="username" value="jincy@raju.com"/>
+	<parameter name="password" value="Test123#"/>
+	
+	<listeners>
+		<listener class-name="com.testng.report.Listeners"/>
+	</listeners>
+	
+	
+<test name="Login">
+	<parameter name="browser" value="chrome"/>
+  <classes>
+  	<class name="com.training.testNG.LoginsalesforceCrossBrowser"/>
+  </classes>
+ </test>
+ <test name="logintest">
+	<parameter name="browser" value="firefox"/>
+  <classes>
+  	<class name="com.training.testNG.LoginsalesforceCrossBrowser"/>
+  </classes>
+ </test>
+ <test name="Loginapplication">
+	<parameter name="browser" value="edge"/>
+  <classes>
+  	<class name="com.training.testNG.LoginsalesforceCrossBrowser"/>
+  </classes>
+ </test>
+ 
+</suite>
