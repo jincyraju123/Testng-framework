@@ -21,13 +21,13 @@ public class Listeners extends BaseTest implements ITestListener {
 		test = extent.createTest(result.getMethod().getMethodName());
 		extentTest.set(test);            // unique thread id ---->test
 	}
-     
+    @Override
 	public void onTestSuccess(ITestResult result) {
 
 		//test.log(Status.PASS, "Test Passed");
 		extentTest.get().log(Status.PASS, "Test Passed");   //thread safe
 	}
-
+    @Override
 	public void onTestFailure(ITestResult result) {
 
 		// test.log(Status.FAIL, "Test Failed");
@@ -48,13 +48,13 @@ public class Listeners extends BaseTest implements ITestListener {
 		extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());  //thread
 
 	}
-
+    @Override
 	public void onTestSkipped(ITestResult result) {
 	}
-
+    @Override
 	public void onStart(ITestContext context) {
 	}
-
+    @Override
 	public void onFinish(ITestContext context) {
 
 		extent.flush();

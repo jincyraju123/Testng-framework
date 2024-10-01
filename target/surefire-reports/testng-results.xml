@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-20T16:10:42 EDT" name="Smoke" finished-at="2024-09-20T16:10:53 EDT" duration-ms="11636">
+  <suite started-at="2024-09-21T15:52:35 EDT" name="Smoke" finished-at="2024-09-21T15:52:51 EDT" duration-ms="16189">
     <groups>
     </groups>
-    <test started-at="2024-09-20T16:10:42 EDT" name="Login" finished-at="2024-09-20T16:10:53 EDT" duration-ms="11636">
+    <test started-at="2024-09-21T15:52:35 EDT" name="Login" finished-at="2024-09-21T15:52:51 EDT" duration-ms="16189">
       <class name="com.salesforce.tests.Loginsalesforcetest">
-        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:42 EDT" name="beforemethod" finished-at="2024-09-20T16:10:45 EDT" duration-ms="2799" status="PASS">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@8458f04]" started-at="2024-09-21T15:52:35 EDT" name="beforemethod" finished-at="2024-09-21T15:52:41 EDT" duration-ms="5762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="loginapplication()[pri:1, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:45 EDT" name="loginapplication" finished-at="2024-09-20T16:10:47 EDT" duration-ms="2748" status="PASS">
+        <test-method signature="loginapplication()[pri:1, instance:com.salesforce.tests.Loginsalesforcetest@8458f04]" started-at="2024-09-21T15:52:41 EDT" name="loginapplication" finished-at="2024-09-21T15:52:44 EDT" duration-ms="3110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginapplication -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:47 EDT" name="teardown" finished-at="2024-09-20T16:10:48 EDT" duration-ms="171" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@8458f04]" started-at="2024-09-21T15:52:44 EDT" name="teardown" finished-at="2024-09-21T15:52:45 EDT" duration-ms="361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:48 EDT" name="beforemethod" finished-at="2024-09-20T16:10:49 EDT" duration-ms="1435" status="PASS">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@8458f04]" started-at="2024-09-21T15:52:45 EDT" name="beforemethod" finished-at="2024-09-21T15:52:46 EDT" duration-ms="1521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="invalidusernameandpassword()[pri:2, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:49 EDT" name="invalidusernameandpassword" finished-at="2024-09-20T16:10:50 EDT" duration-ms="1109" status="FAIL">
+        <test-method signature="invalidusernameandpassword()[pri:2, instance:com.salesforce.tests.Loginsalesforcetest@8458f04]" started-at="2024-09-21T15:52:46 EDT" name="invalidusernameandpassword" finished-at="2024-09-21T15:52:47 EDT" duration-ms="1438" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [check your username and password. If you still can't log in, contact your Salesforce administrator.] but found [Please check your username and password. If you still can't log in, contact your Salesforce administrator.]]]>
@@ -39,8 +39,8 @@ at org.testng.Assert.assertEquals(Assert.java:666)
 at com.qa.base.BasePage.comparetext(BasePage.java:52)
 at com.salesforce.pages.LoginPage.compareerrormessage(LoginPage.java:79)
 at com.salesforce.tests.Loginsalesforcetest.invalidusernameandpassword(Loginsalesforcetest.java:78)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
@@ -49,7 +49,7 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:848)
 at org.testng.TestRunner.run(TestRunner.java:621)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
@@ -74,19 +74,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidusernameandpassword -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:50 EDT" name="teardown" finished-at="2024-09-20T16:10:51 EDT" duration-ms="178" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@8458f04]" started-at="2024-09-21T15:52:48 EDT" name="teardown" finished-at="2024-09-21T15:52:48 EDT" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:51 EDT" name="beforemethod" finished-at="2024-09-20T16:10:52 EDT" duration-ms="1608" status="PASS">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@8458f04]" started-at="2024-09-21T15:52:48 EDT" name="beforemethod" finished-at="2024-09-21T15:52:50 EDT" duration-ms="1642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="loginapplicationwithoutpassword()[pri:3, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:52 EDT" name="loginapplicationwithoutpassword" finished-at="2024-09-20T16:10:53 EDT" duration-ms="1146" status="PASS">
+        <test-method signature="loginapplicationwithoutpassword()[pri:3, instance:com.salesforce.tests.Loginsalesforcetest@8458f04]" started-at="2024-09-21T15:52:50 EDT" name="loginapplicationwithoutpassword" finished-at="2024-09-21T15:52:51 EDT" duration-ms="1400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginapplicationwithoutpassword -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@543295b0]" started-at="2024-09-20T16:10:53 EDT" name="teardown" finished-at="2024-09-20T16:10:53 EDT" duration-ms="90" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.salesforce.tests.Loginsalesforcetest@8458f04]" started-at="2024-09-21T15:52:51 EDT" name="teardown" finished-at="2024-09-21T15:52:51 EDT" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
