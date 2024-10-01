@@ -60,5 +60,10 @@ public class Listeners extends BaseTest implements ITestListener {
 		extent.flush();
 
 	}
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
